@@ -1,0 +1,14 @@
+Retail Sales & Profitability Analysis
+Power BI DAX Measures
+
+Total Sales = SUM(Orders[Sales])
+
+Total Profit = SUM(Orders[Profit])
+
+Profit Margin = 
+DIVIDE([Total Profit], [Total Sales], 0)
+
+Total Orders = DISTINCTCOUNT(Orders[Order ID])
+
+Average Order Value =
+DIVIDE([Total Sales], [Total Orders], 0)
